@@ -37,11 +37,11 @@ def validate_data(values):
     Raises ValueError is string can't be converted into Int.
     or if there aren't exactly 6 values.
     """
-
+    print(values)
     try:
+        [int(value)for value in values]
         if len(values) != 6:
             raise ValueError(f"Exactly 6 values required. You provided {len(values)}")
     except ValueError as e:
                 print(f"Invalid date: {e}, please try again\n")
 get_sales_data()
-
