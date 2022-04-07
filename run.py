@@ -16,10 +16,9 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('Love_Sandwiches')
 
 def get_sales_data():
+    
     """
-
     Get Sales input from the user
-
     """
 
     print("Please enter Sales data from the last market")
@@ -30,3 +29,5 @@ def get_sales_data():
     print(f"The data provided is {data_str}")
 
 get_sales_data()
+
+
